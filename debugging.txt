@@ -1,0 +1,60 @@
+# Debugging Tips for Common Streamlit Issues
+
+## 1. ValueError: "The truth value of a Series is ambiguous"
+
+This error typically occurs when:
+- You're trying to use a pandas Series in a boolean context
+- You're passing incorrect data to style functions like `highlight_max()`
+
+**Solution:**
+- Always verify that columns exist before using them
+- Use explicit boolean methods like `.any()`, `.all()`, or `.empty`
+- Check that parameters passed to styling functions are valid columns
+
+## 2. FileNotFoundError with secrets.toml
+
+This occurs when Streamlit can't find your secrets configuration file.
+
+**Solution:**
+- Make sure the `.streamlit` folder is in the correct location
+- Verify the `secrets.toml` file is correctly named and formatted
+- Add error handling around accessing secrets
+
+## 3. API Key Configuration Issues
+
+Problems with the Gemini API or other external APIs:
+
+**Solution:**
+- Verify API key is valid and correctly formatted
+- Add try/except blocks around API calls
+- Provide user feedback when API calls fail
+- Implement fallback functionality
+
+## 4. Data Type and Visualization Errors
+
+Issues with data visualization or processing:
+
+**Solution:**
+- Check data types before processing (use `df.dtypes`)
+- Convert string numbers to numeric: `pd.to_numeric(df['column'], errors='coerce')`
+- Handle NaN values: `df.fillna(0)` or `df.dropna()`
+- Print sample data to verify structure
+
+## 5. Performance Issues
+
+If the app becomes slow:
+
+**Solution:**
+- Use `@st.cache_data` for functions that load or process data
+- Limit the amount of data displayed at once
+- Use pagination for large datasets
+- Optimize heavy computations
+
+## 6. Debugging Techniques
+
+General debugging tips:
+
+- Use `st.write()` to print variables and inspect their values
+- Add `st.error()` to display error messages
+- Check Streamlit's logs in the terminal
+- Break complex operations into smaller steps
