@@ -1,15 +1,8 @@
 # Performance Tracker Prototype
 
-<div align="center">
-  <img src="https://via.placeholder.com/150?text=PerformX" alt="PerformX Logo" width="150"/>
 
-  *Transform employee performance data into actionable insights*
 
-  ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
-  ![Streamlit](https://img.shields.io/badge/Streamlit-1.30.0-red)
-  ![Pandas](https://img.shields.io/badge/Pandas-2.1.1-green)
-  ![Google AI](https://img.shields.io/badge/Google%20Gemini%20AI-Powered-blueviolet)
-</div>
+
 
 ## 📋 Overview
 
