@@ -1,4 +1,4 @@
-# PerformX - Employee Performance Analytics Platform
+# Performance Tracker Prototype
 
 <div align="center">
   <img src="https://via.placeholder.com/150?text=PerformX" alt="PerformX Logo" width="150"/>
@@ -13,7 +13,7 @@
 
 ## 📋 Overview
 
-PerformX is a comprehensive employee performance analytics platform built with Streamlit and Google's Gemini AI. It transforms raw performance data into actionable insights, helping managers and HR professionals make data-driven decisions about their teams.
+This is a comprehensive prototype for employee performance analytics platform built with Streamlit and Google's Gemini AI. It transforms raw performance data into actionable insights, helping managers and HR professionals make data-driven decisions about their teams.
 
 The application automatically detects relevant metrics from any CSV data structure, visualizes performance trends, and provides AI-powered recommendations for individual and team improvement.
 
@@ -172,17 +172,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 📬 Contact
 
-Project Link: [https://github.com/yourusername/performx](https://github.com/yourusername/performx)
 
----
 
-<div align="center">
-  <p>Made with ❤️ by Your Team Name</p>
-  <p>Powered by Streamlit and Google Gemini AI</p>
-</div>
